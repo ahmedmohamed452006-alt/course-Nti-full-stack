@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+img{
+    width: 30%;
+}
+h1{
+    text-align: center;
+    color:black;
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+    
+}
+form{
+    display: inline-block;
+    margin-left: 50px;
+    text-align: left;
+   
+}

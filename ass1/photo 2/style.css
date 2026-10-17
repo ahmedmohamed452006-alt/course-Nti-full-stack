@@ -1,0 +1,43 @@
+body {
+    padding: 5px;
+    background-color: midnightblue;
+}
+
+.title {
+    color: goldenrod;
+    padding: 15px;
+}
+
+.subtitle {
+    color: white;
+    padding-bottom: 15px;
+}
+
+.places {
+    padding: 5px;
+    background-color: steelblue;
+}
+
+.row {
+    padding: 3px;
+}
+
+.description,
+.photo {
+    display: inline-block;
+    margin: 3px;
+}
+
+.description {
+    width: 21%;
+    padding: 10px;
+}
+
+.photo {
+    width: 22%;
+}
+
+.photo img {
+    width: 100%;
+    height: 140px;
+}
