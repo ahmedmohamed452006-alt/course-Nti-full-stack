@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a table at Spice Haven — Reserve your dining table online.">
+  <title>Book a Table — Spice Haven</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hidden checkbox for pure CSS mobile menu toggle -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+  <!-- Navigation Bar -->
+  <nav class="topnav">
+    <div class="nav-top-row">
+      <div class="logo">SPICE HAVEN</div>
+      <label for="nav-toggle" class="nav-hamburger">&#9776;</label>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="about.html">ABOUT</a>
+      <a href="about.html#contact">CONTACT</a>
+      <a href="book-a-table.html" class="active">BOOK A TABLE</a>
+    </div>
+  </nav>
+
+  <!-- Reservation Section -->
+  <main>
+    <section class="booking-section">
+      <h2>BOOK A TABLE</h2>
+
+      <!-- Form Inputs: Party Size, Date, Time -->
+      <div class="booking-fields">
+        <div class="booking-field">
+          <label for="party-size">Party Size</label>
+          <select id="party-size">
+            <option value="1">1 Guest</option>
+            <option value="2" selected>2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+            <option value="6">6 Guests</option>
+            <option value="7">7 Guests</option>
+            <option value="8">8 Guests</option>
+            <option value="9">9 Guests</option>
+            <option value="10">10 Guests</option>
+          </select>
+        </div>
+
+        <div class="booking-field">
+          <label for="booking-date">Date</label>
+          <input type="date" id="booking-date">
+        </div>
+
+        <div class="booking-field">
+          <label for="booking-time">Time</label>
+          <input type="time" id="booking-time">
+        </div>
+      </div>
+
+      <!-- Time Slots Grid -->
+      <p class="slot-heading">Choose an available time slot:</p>
+
+      <div class="slots-grid">
+        <input type="radio" name="slot" id="t1"><label for="t1">12:00 PM</label>
+        <input type="radio" name="slot" id="t2"><label for="t2">12:30 PM</label>
+        <input type="radio" name="slot" id="t3"><label for="t3">1:00 PM</label>
+        <input type="radio" name="slot" id="t4"><label for="t4">1:30 PM</label>
+        <input type="radio" name="slot" id="t5"><label for="t5">2:00 PM</label>
+        <input type="radio" name="slot" id="t6"><label for="t6">2:30 PM</label>
+        <input type="radio" name="slot" id="t7"><label for="t7">3:00 PM</label>
+        <input type="radio" name="slot" id="t8"><label for="t8">3:30 PM</label>
+        <input type="radio" name="slot" id="t9"><label for="t9">6:00 PM</label>
+        <input type="radio" name="slot" id="t10"><label for="t10">6:30 PM</label>
+        <input type="radio" name="slot" id="t11"><label for="t11">7:00 PM</label>
+        <input type="radio" name="slot" id="t12"><label for="t12">7:30 PM</label>
+        <input type="radio" name="slot" id="t13"><label for="t13">8:00 PM</label>
+        <input type="radio" name="slot" id="t14"><label for="t14">8:30 PM</label>
+        <input type="radio" name="slot" id="t15"><label for="t15">9:00 PM</label>
+        <input type="radio" name="slot" id="t16"><label for="t16">9:30 PM</label>
+      </div>
+
+      <a href="#reservation-modal" class="btn-book">BOOK NOW</a>
+    </section>
+
+    <!-- Reservation Notice Modal (CSS :target) -->
+    <div class="modal-popup" id="reservation-modal">
+      <div class="modal-content">
+        <h3>Online reservations are currently unavailable</h3>
+        <p>
+          To make a reservation, please call us directly at<br>
+          <strong>123-456-7890</strong>
+        </p>
+        <a href="#" class="btn-close-modal">CLOSE</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <svg viewBox="0 0 180 97" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+        <path fill="#000" d="M92 75c0-12.15 9.85-22 22-22h22v22c0 12.15-9.85 22-22 22H92V75Z"/>
+        <path fill="#000" d="M136 31c0-12.15 9.85-22 22-22h22v22c0 12.15-9.85 22-22 22h-22V31Z"/>
+        <path fill="#000" d="M88 75c0-12.15-9.85-22-22-22H44v22c0 12.15 9.85 22 22 22h22V75Z"/>
+        <path fill="#000" d="M44 31c0-12.15-9.85-22-22-22H0v22c0 12.15 9.85 22 22 22h22V31Z"/>
+        <path fill="#000" d="M74.556 46.67c-8.591-8.592-8.591-22.522 0-31.113L90.113 0l15.556 15.556c8.592 8.591 8.592 22.521 0 31.113L90.113 62.226 74.556 46.67Z"/>
+      </svg>
+    </div>
+
+    <div class="footer-box">
+      <div class="footer-box1">
+        <p>INDIAN RESTAURANT<br>&amp; CAFFE</p>
+        <b>SPICE HAVEN</b>
+      </div>
+
+      <div class="footer-box2">
+        A: 500 Terry Francine St.<br>
+        San Francisco CA 94158<br>
+        T: 123-456-7890<br>
+        E: <a href="mailto:hello@spicehaven.com">hello@spicehaven.com</a><br><br>
+        Mon–Sun: 12:00 PM – 10:30 PM
+      </div>
+
+      <div class="footer-box3">
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="about.html">ABOUT</a>
+        <a href="about.html#contact">CONTACT</a>
+        <a href="book-a-table.html">BOOK A TABLE</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">FACEBOOK</a>
+      </div>
+    </div>
+
+    <p class="footer-copyright">
+      &copy; 2025 by Spice Haven. All rights reserved.
+    </p>
+  </footer>
+
+</body>
+</html>
