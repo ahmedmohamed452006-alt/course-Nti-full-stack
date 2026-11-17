@@ -1,0 +1,18 @@
+/* *{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-color: tan;
+} */
+.hero{
+  height: 75vh;
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url('../images/p3.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.hero h1{ font-size: 4rem; font-weight: 700; text-shadow: 2px 2px 8px #000; }
